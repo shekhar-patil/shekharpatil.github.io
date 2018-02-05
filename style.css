@@ -1,0 +1,14 @@
+.red{
+    color: red;
+}
+img {
+    width: 15%;
+    border-radius: 50%;
+    height: auto;
+    
+}
+img:hover{
+    box-shadow:2px 2px 10px 10px #1a0d00;
+    -webkit-box-shadow:2px 2px 10px 10x #1a0d00;
+    -moz-box-shadow:2px 2px 10px 10px #1a0d00;
+}
