@@ -1,7 +1,7 @@
 // Our labels along the x-axis
 var years = ["10Th","12TH","Engineering"];
 // For drawing the lines
-var percentage = [87.64,62.46,68.07,0,100];
+var percentage = [87.64,62.46,68.4,0,100];
 
 
 var ctx = document.getElementById("myChart");

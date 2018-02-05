@@ -18,6 +18,7 @@ img:hover{
 .graph{
 	width: 70%;
 	margin-left: 10%;
+	padding-top: 15%;
 }
 
 .header{
@@ -40,8 +41,10 @@ img:hover{
 }
 
 .quote{
-	margin: 10%;
+	margin-top: 10%;
 	font-size: 5vh;
+	margin-right: 10%;
+	margin-left: 10%;
 	padding: 2vh;
 	background-color: #36B7F7;
 }
