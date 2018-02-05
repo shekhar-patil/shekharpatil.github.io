@@ -36,14 +36,14 @@ img:hover{
 	position: absolute;
 	width: 98%;
 	background-color: #383838;
-	font-size: 200%;
+	font-size: 2.1vw;
 	padding: 1%;
 	color: white;
 }
 
 .quote{
 	margin: 15%;
-	font-size: 200%;
+	font-size: 2.45vw;
 	padding: 1%;
 	background-color: #36B7F7;
 }
