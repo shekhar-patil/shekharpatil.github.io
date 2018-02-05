@@ -19,18 +19,16 @@ img:hover{
 	width: 70%;
 	margin-left: 10%;
 }
-.main{
-	background-color: #0BB4F3;
-	font-family: Arial, Helvetica, sans-serif;
-}
+
 .header{
-	
+	height: 100vh;
 	background-color: #0BA6F3;
 }
 .quote-box{
 	
 	background-color: #0BA6F3;
 	padding: 1%;
+	padding-top: 15vh;
 }
 .top{
 	position: absolute;
@@ -42,8 +40,18 @@ img:hover{
 }
 
 .quote{
-	margin: 15%;
+	margin: 10%;
 	font-size: 5vh;
-	padding: 1%;
+	padding: 2vh;
 	background-color: #36B7F7;
+}
+
+.main{
+	height: 100vh;
+}
+
+.info{
+	height: 100vh;
+	background-color: #0BB4F3;
+	font-family: Arial, Helvetica, sans-serif;
 }
