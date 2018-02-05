@@ -7,8 +7,43 @@ img {
     height: auto;
     
 }
+body{
+	margin: 0px;
+}
 img:hover{
     box-shadow:2px 2px 10px 10px #1a0d00;
     -webkit-box-shadow:2px 2px 10px 10x #1a0d00;
     -moz-box-shadow:2px 2px 10px 10px #1a0d00;
+}
+.graph{
+	width: 70%;
+	margin-left: 10%;
+}
+.main{
+	background-color: #0BB4F3;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+	
+	background-color: #0BA6F3;
+}
+.quote-box{
+	
+	background-color: #0BA6F3;
+	padding: 1%;
+}
+.top{
+	position: absolute;
+	width: 98%;
+	background-color: #383838;
+	font-size: 200%;
+	padding: 1%;
+	color: white;
+}
+
+.quote{
+	margin: 15%;
+	font-size: 200%;
+	padding: 1%;
+	background-color: #36B7F7;
 }
