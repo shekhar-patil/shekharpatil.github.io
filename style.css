@@ -34,6 +34,7 @@ img:hover{
 	padding-top: 15vh;
 	padding-bottom: 10vh;
 }
+
 .top{
 	position: absolute;
 	width: 98%;
@@ -62,6 +63,6 @@ img:hover{
 	padding-top: 20vh;
 	height: 100vh;
 	background-color: #0BB4F3;
-	opacity: 0.8;
+	opacity: 0.9;
 	font-family: Arial, Helvetica, sans-serif;
 }
