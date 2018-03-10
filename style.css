@@ -1,6 +1,16 @@
 .red{
     color: red;
 }
+h2{
+	font-family: 'Brawler';
+}
+h3{
+	font-family: 'Brawler';
+}
+h4{
+	font-family: 'Brawler';
+}
+
 img {
     width: 15%;
     border-radius: 50%;
