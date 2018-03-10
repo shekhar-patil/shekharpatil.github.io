@@ -9,7 +9,7 @@ img {
 }
 body{
 	margin: 0px;
-	background-image: url("background.jpg");
+	background-image: url("B1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -65,4 +65,77 @@ img:hover{
 	background-color: #0BB4F3;
 	opacity: 0.9;
 	font-family: Arial, Helvetica, sans-serif;
+}
+.project{
+	
+	
+}
+.projectDiv{
+	
+	margin: 0%;
+	border-radius: 5%;
+	height: 100vh;
+	opacity: 0.99;
+}
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+.cards1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.cards2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.cardcontainer{
+	position: relative;
+	width: 45%;
+	height: 40vh;
+	margin: 1vh;
+}
+.thecard{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	
+	
+}
+.thecard:hover{
+	transform: rotateY(180deg);
+}
+
+.thefront{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+
+	backface-visibility: hidden;
+	transform: rotateY(0deg);
+}
+.theback{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 10%;
+    left: 10%;
+    height: 30%;
+    width: 80%;
+    
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+.thefront h3{
+	vertical-align: middle;
 }
