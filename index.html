@@ -1,128 +1,43 @@
+<!DOCTYPE html>
 <html>
-    <head>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <meta charset="UTF-8">
-            <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-            <link href='https://fonts.googleapis.com/css?family=Brawler' rel='stylesheet'>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>
-                Shekhar Patil
-            </title>
-    </head>
-    
-    <body bgcolor = "#F6F2F1">
-         <section class="header">
-           <div class="header-box">
-             <div class="top">Portfolio</div>
-           </div>
-           <div class="quote-box">
-              <div class="quote">
-                “It was never too late to learn something. The past is unalterable in any event. The future is the only thing we can change. Learning the lessons of the past is the only way to shape the present and the future.”<br>
-                <span style="font-size: 70%"> — Jim Butcher</span>
-              </div>
-             
-           </div>
-
-         </section>         
-                  
-        <section class="info">
-          <center>
-           
-            <img class="myImg" src="http://i65.tinypic.com/zk4xhi.jpg" alt="Image is Loading..">
-            <strong><h2></i>Shekhar Patil</i></h2></strong>
-            <strong><h3><i class="fas fa-star"></i>Smt.Kashibai Navale College Of Engineering<i class="fas fa-star"></i></h3></strong>
-
+<title>Web Page Design</title>
+<head>
+    <script>
+    function printPattern() {
+        var str  = "";
+        
+        var x = document.getElementById("pattern").value;
+        var p = x;
+        for (var i = 1; i <= x; i ++){
             
+            for(var j = 1 ; j <= x ; j++){
+            if((x % 2==0) && (i == x/2)){
+                continue;
+            }
+                if( j == i || j == p){
+                    str = str + j;
+                }else{
+                    str = str + "#";
+                }
+                
+            }
+            p = p - 1;
+            if((x % 2==0) && (i == x/2)){
+                str = str;
+            }else{
+            str = str + "</br>";
+            }
+        }
+       document.getElementById("PatternPrint").innerHTML = str;
+    }
+    
+    </script>
+</head>
+<body>
+<input type = "text" id = "pattern">
+<button onclick = "printPattern()"> Show Pattern </button>
 
-            <table>
-              <tr>
-                <th style="padding: 0px 10px 0px 0px;"><h4><i class="fas fa-code"></i> Website Developer</h4></th>
-                <th><h4><i class="fas fa-graduation-cap"></i> Computer Engineer</h4></th> 
-              </tr>
-              <tr>
-                <td><h4><i class="fas fa-chart-line"></i> Data Science </h4></td>
-                <td><h4><i class="fas fa-futbol"></i> Sport Lover</h4></td>
-              </tr>
-            </table>
-
-
-            <a href="https://twitter.com/shekhar_2111995?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @shekhar_2111995</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-          </center>
-        </section>
-        <section  class="project">
-          <center>
-            <div class="projectDiv">
-              <h2 style="padding-top: 1%; font-family: 'Brawler';font-size: 32px;">My Projects</h2>
-
-              <div class="cards1">
-                <div class="cardcontainer">
-                  <div class="thecard">
-
-                    <div class="thefront">
-                      
-                    <h3 style="font-family: 'Brawler';">Crime Patterns Analysis, Visualizations And Predictions</h3>
-
-                    </div>
-                    <div class="theback">
-                      <h4 style="font-family: 'Brawler';">Through this project, our aim is to track an employee on a real time basis and verify
-the compliance of Service Level Agreement by displaying his/her details using a web
-based application or an android application.</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="cardcontainer">
-                  <div class="thecard">
-                    <div class="thefront">
-                      <h3 style="font-family: 'Brawler';">Service Level Agreement (SLA) Tracking</h3>
-                    </div>
-                    <div class="theback">
-                    <h4 style="font-family: 'Brawler';">Through this project, our aim was to track an employee on a real time basis and verify
-the compliance of Service Level Agreement by displaying his/her details using a web
-based application or an android application.</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cards2">
-                <div class="cardcontainer">
-                  <div class="thecard">
-                    <div class="thefront">
-                      <h4 style="font-family: 'Brawler';">Ranklist Web Application using Ruby On Rails</h4>
-                    </div>
-                    <div class="theback">
-                    <h4 style="font-family: 'Brawler';">Ranking of list of the posts depending on up-vote and down-vote of user.</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="cardcontainer">
-                  <div class="thecard">
-                    <div class="thefront">
-                      <h3 style="font-family: 'Brawler';">Student Portal (Website based)</h3>
-                    </div>
-                    <div class="theback">
-                      <h4 style="font-family: 'Brawler';">A Website Based student portal in which Django framework is used. It helps
-monitoring and keeping track of the attendance of every student. Along with the study
-material,it also has a chatbox for enquiries.</h4>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
-            </div>
-
-
-          </center>
-          
-          
-        </section>
-          
-         
-                   
-
-    </body>
+<p id = "PatternPrint"></p>
+</body>
+</html>
     
