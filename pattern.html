@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+    <script>
+    function printPattern() {
+        var str  = "";
+        
+        var x = document.getElementById("pattern").value;
+        var p = x;
+        for (var i = 1; i <= x; i ++){
+            
+            for(var j = 1 ; j <= x ; j++){
+            if((x % 2==0) && (i == x/2)){
+                continue;
+            }
+                if( j == i || j == p){
+                    str = str + j;
+                }else{
+                    str = str + "#";
+                }
+                
+            }
+            p = p - 1;
+            if((x % 2==0) && (i == x/2)){
+                str = str;
+            }else{
+            str = str + "</br>";
+            }
+        }
+       document.getElementById("PatternPrint").innerHTML = str;
+    }
+    
+    </script>
+</head>
+<body>
+<input type = "text" id = "pattern">
+<button onclick = "printPattern()"> Show Pattern </button>
+
+<p id = "PatternPrint"></p>
+</body>
+</html>
