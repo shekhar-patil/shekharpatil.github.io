@@ -1,6 +1,6 @@
 #Shekhar Patil
 
-This is my portfolio I am going. Currently, I am updating it.
-Please do checkout my other projects and hire me. I would like to works with those people which are working in the same field in which I am working.
+Learning HTML and CSS and trying to implement it here.
+Please read more at about me techsoro.com
 <br>
-Contact me at : patilshekhar900@gmail.com
+Feel free to contact me at : patilshekhar900@gmail.com

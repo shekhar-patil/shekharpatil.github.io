@@ -1,69 +1,40 @@
 <!DOCTYPE html>
-
 <html>
-
-<title>Web Page Design</title>
-
-<head>
+  <title>Web Page Design</title>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
-
-    function printPattern() {
-
+      function printPattern() {
         var str  = "";
-
-        
-
         var x = document.getElementById("pattern").value;
-
         var p = x;
 
         for (var i = 1; i <= x; i ++){
-            for(var j = 1 ; j <= x ; j++){
-
+          for(var j = 1 ; j <= x ; j++){
             if((x % 2==0) && (i == x/2)){
-
-                continue;
+              continue;
             }
-
-                if( j == i || j == p){
-
-                    str = str + j;
-
-                }else{
-
-                    str = str + "#";
-
-                }
- }
-            p = p - 1;
-
-            if((x % 2==0) && (i == x/2)){
-
-                str = str;
-
-            }else{
-
-                str = str + "</br>";
+            if( j == i || j == p){
+              str = str + j;
+            } else {
+              str = str + "#";
             }
+          }
+          p = p - 1;
+          if((x % 2==0) && (i == x/2)){
+            str = str;
+          }else{
+            str = str + "</br>";
+          }
         }
-       document.getElementById("PatternPrint").innerHTML = str;
-
-    }
-
+        document.getElementById("PatternPrint").innerHTML = str;
+      }
     </script>
-
-</head>
-
-<body style="background-color:grey">
-<h2>Enter the no. to see pattern.</h2>
-
-<input type = "text" id = "pattern" style = "width: 100% ; font-size:5vw">
-
-<button onclick = "printPattern()" > Show Pattern </button>
-
-<p style = "border:solid black; width: 50% ; font-size:5vw" id = "PatternPrint"></p>
-
-</body>
-
+  </head>
+  <body style="background-color:grey">
+    <h2>Enter the no. to see pattern.</h2>
+    <input type = "text" id = "pattern" style = "width: 100% ; font-size:5vw">
+    <button onclick = "printPattern()" > Show Pattern </button>
+    <p style = "border:solid black; width: 50% ; font-size:5vw" id = "PatternPrint"></p>
+  </body>
 </html>
